@@ -1,0 +1,26 @@
+===================================CREATE TABLE================================================
+
+CREATE TABLE employee (
+    empid number(38,0),
+    firstname varchar(255),
+    middlename varchar(255),
+    lastname varchar(255),
+    address varchar(255),
+    contactno varchar(255)
+);
+
+commit;
+====================================CRETAE SEQUENCE===========================================
+
+CREATE SEQUENCE "HIBERNATE_SEQUENCE" MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 643 CACHE 20 NOORDER NOCYCLE ;
+
+commit;
+
+---------------------------------------
+ CREATE TABLE policies (
+    id number(38,0),
+    policynumber varchar(255),
+    amount varchar(255),
+    primary key(id)
+);
+ commit;
